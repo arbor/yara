@@ -1,5 +1,10 @@
 rule dirtjumper_drive
 {
+ meta:
+   author = "Jason Jones"
+   author_email = "jasonjones@arbor.net"
+   date = "2013-08-26"
+   description = "Identify first version of drive DDoS malware"
   strings:
     $cmd1 = "-get" fullword
     $cmd2 = "-ip" fullword
